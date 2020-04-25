@@ -11,61 +11,50 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/AgeTitle"
+            android:id="@+id/NameTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age:"
+            android:text="Name:"
             android:textSize="10pt"
             android:paddingTop="10dp"
             android:textColor="#000000">
         </TextView>
 
         <EditText
-            android:id="@+id/EditAge"
+            android:id="@+id/EditName"
             android:layout_height="wrap_content"
-            android:layout_below="@id/AgeTitle"
-            android:hint="Enter Age Here"
+            android:layout_below="@id/NameTitle"
+            android:hint="Enter First and Last Name Here"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many requests/questions will you be able to answer each week?"
+            android:textSize="10pt"
+            android:layout_below="@id/EditName"
+            android:paddingTop="15dp"
+            android:textColor="#000000">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTime"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TimeTitle"
+            android:hint="Enter Max Number of Requests Here"
             android:inputType="number"
             android:layout_width="fill_parent">
         </EditText>
 
         <TextView
-            android:id="@+id/GenderTitle"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="Gender:"
-            android:layout_below="@id/EditAge"
-            android:textSize="10pt"
-            android:textColor="#000000"
-            android:paddingTop="15dp">
-        </TextView>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@id/GenderTitle"
-            android:id="@+id/radio_group">
-            <RadioButton android:id="@+id/radio_male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Male" />
-            <RadioButton android:id="@+id/radio_female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female" />
-            <RadioButton android:id="@+id/radio_other"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Other" />
-        </RadioGroup>
-
-        <TextView
             android:id="@+id/LanguageTitle"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:text="Preferred Language:"
-            android:layout_below="@id/radio_group"
+            android:text="Which Languages Can You Communicate In?"
+            android:layout_below="@id/EditTime"
             android:textSize="10pt"
             android:textColor="#000000"
             android:paddingTop="15dp">
@@ -108,10 +97,10 @@
         </EditText>
 
         <TextView
-            android:id="@+id/stateTitle"
+            android:id="@+id/countyTitle"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:text="State:"
+            android:text="County:"
             android:layout_below="@id/EditOtherLanguage"
             android:textSize="10pt"
             android:textColor="#000000"
@@ -119,73 +108,39 @@
         </TextView>
 
         <Spinner
-            android:id="@+id/StatesMenu"
+            android:id="@+id/CountyMenu"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/stateTitle" />
+            android:layout_below="@id/countyTitle" />
 
         <TextView
-            android:id="@+id/CommunicationTitle"
+            android:id="@+id/SpecialtyTitle"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:text="Preferred Method of Communication:"
-            android:layout_below="@id/StatesMenu"
+            android:text="Specialty:"
+            android:layout_below="@id/CountyMenu"
             android:textSize="10pt"
             android:textColor="#000000"
             android:paddingTop="15dp">
         </TextView>
 
-        <CheckBox android:id="@+id/checkbox_text"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:id="@+id/SpecialtyMenu"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/CommunicationTitle"
-            android:text="Text Messaging" />
-        <CheckBox android:id="@+id/checkbox_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_text"
-            android:text="Email" />
-        <CheckBox android:id="@+id/checkbox_facebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_email"
-            android:text="Facebook" />
-        <CheckBox android:id="@+id/checkbox_instagram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_facebook"
-            android:text="Instagram" />
-
-        <TextView
-            android:id="@+id/otherCommunicationTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/checkbox_instagram"
-            android:paddingTop="15dp"
-            android:text="If other, please specify:"
-            android:textColor="#000000"
-            android:textSize="10pt">
-        </TextView>
-
-        <EditText
-            android:id="@+id/EditOtherCommunication"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/otherCommunicationTitle"
-            android:hint="Enter plaform and account here (ex: Skype, Username: bob1)"
-            android:inputType="text"
-            android:layout_width="fill_parent">
-        </EditText>
+            android:paddingBottom="25dp"
+            android:layout_below="@id/SpecialtyTitle" />
 
         <Button
-            android:id="@+id/submitPatient"
+            android:id="@+id/submitDoctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
             android:padding="15dp"
-            android:layout_below="@id/EditOtherCommunication"
+            android:layout_below="@id/SpecialtyMenu"
+            android:layout_centerHorizontal="true"
             android:textColor="#FFFFFF"
             android:text="Submit"
-            android:layout_centerHorizontal="true"
             android:background="#008080"/>
 
     </RelativeLayout>

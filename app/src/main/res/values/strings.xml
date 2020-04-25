@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Covid Connection</string>
+    <string name="app_name">CalHacks App</string>
     <string name="doctorbutton">Doctor</string>
     <string name="patientbutton">Patient</string>
     <string name="SelectText">Are you a Doctor or a Patient?</string>
@@ -55,5 +55,61 @@
         <item>Wisconsin</item>
         <item>Wyoming</item>
     </string-array>
+
+    <string-array name="county_array">
+        <item>Santa Clara</item>
+        <item>Los Angeles</item>
+        <item>Monterey</item>
+        <item>San Diego</item>
+        <item>San Mateo</item>
+        <item>El Dorado</item>
+        <item>Shasta</item>
+        <item>Fresno</item>
+        <item>Kern</item>
+        <item>Siskiyou</item>
+        <item>Shasta</item>
+        <item>Santa Barbara</item>
+        <item>Yolo</item>
+        <item>Alameda</item>
+        <item>Solano</item>
+        <item>Riverside</item>
+        <item>Merced</item>
+        <item>San Joaquin</item>
+        <item>San Benito</item>
+        <item>Orange</item>
+        <item>San Francisco</item>
+        <item>Contra Costa</item>
+        <item>Tulare</item>
+        <item>Marin</item>
+        <item>Ventura</item>
+        <item>San Bernardino</item>
+        <item>Ventura</item>
+        <item>Butte</item>
+    </string-array>
+
+    <string-array name="specialty_array">
+        <item>Anesthesiology</item>
+        <item>Obstetrics &amp; Gynecology</item>
+        <item>Allergy &amp; Immunology</item>
+        <item>Family Medicine</item>
+        <item>Radiology</item>
+        <item>Psychiatry &amp; Neurology</item>
+        <item>Plastic Surgery</item>
+        <item>Dermatology</item>
+        <item>Internal Medicine</item>
+        <item>Preventive Medicine</item>
+        <item>Medical Clinics</item>
+        <item>Pediatrics</item>
+        <item>Surgery</item>
+        <item>Orthopedic Surgery</item>
+        <item>Optometrist</item>
+        <item>Podiatrist</item>
+        <item>Pain Medicine</item>
+        <item>Pathology</item>
+        <item>Genetics</item>
+        <item>Sleep Disorders</item>
+        <item>Medical Clinics</item>
+    </string-array>
 </resources>
+
 
