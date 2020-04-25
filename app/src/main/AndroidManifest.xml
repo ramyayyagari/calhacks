@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoctorPatientSelect"></activity>
+        <activity android:name=".DoctorRegistration"></activity>
+        <activity android:name=".DoctorPatientSelect" />
         <activity android:name=".PatientRegistration" />
         <activity android:name=".MainActivity">
             <intent-filter>
