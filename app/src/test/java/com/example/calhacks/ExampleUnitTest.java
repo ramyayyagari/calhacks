@@ -1,4 +1,4 @@
-package com.androidedx.calhacksapp;
+package com.example.calhacks;
 
 import org.junit.Test;
 
