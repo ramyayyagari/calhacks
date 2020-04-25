@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/AgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="10pt"
+            android:textColor="#000000">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditAge"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AgeTitle"
+            android:hint="Enter Age Here"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/GenderTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Gender:"
+            android:layout_below="@id/EditAge"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/GenderTitle"
+            android:id="@+id/radio_group">
+            <RadioButton android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+            <RadioButton android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+            <RadioButton android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/LanguageTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Preferred Language:"
+            android:layout_below="@id/radio_group"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <CheckBox android:id="@+id/checkbox_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LanguageTitle"
+            android:text="English" />
+        <CheckBox android:id="@+id/checkbox_spanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_english"
+            android:text="Spanish" />
+        <CheckBox android:id="@+id/checkbox_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_spanish"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/otherTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="If other, please specify:"
+            android:layout_below="@id/checkbox_other"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditOtherLanguage"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherTitle"
+            android:hint="Enter Language Here"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/stateTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="State:"
+            android:layout_below="@id/EditOtherLanguage"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/StatesMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateTitle" />
+
+        <TextView
+            android:id="@+id/CommunicationTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Preferred Method of Communication:"
+            android:layout_below="@id/StatesMenu"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <CheckBox android:id="@+id/checkbox_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CommunicationTitle"
+            android:text="Phone Number" />
+        <CheckBox android:id="@+id/checkbox_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_english"
+            android:text="Email" />
+        <CheckBox android:id="@+id/checkbox_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_spanish"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/otherTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="If other, please specify:"
+            android:layout_below="@id/checkbox_other"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="15dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditOtherLanguage"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherTitle"
+            android:hint="Enter Language Here"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+
+    </RelativeLayout>
+</ScrollView>
