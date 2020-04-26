@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ViewPatientContact">
 
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="355dp"
+        android:layout_height="289dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="243dp" />
 </android.support.constraint.ConstraintLayout>

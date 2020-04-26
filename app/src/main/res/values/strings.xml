@@ -115,7 +115,8 @@
     <string name="declinePatient">DECLINE</string>
     <string name="acceptPatient">ACCEPT</string>
     <string name="title_your_requests">Your Requests</string>
-    <string name="username">Username</string>
+    <string name="username">Patient123</string>
+    <string name="request_blurb">I think I may have iridocyclitis!! Help!!</string>
     <string name="profile">Profile</string>
     <string name="description_instructions">Briefly describe your condition.</string>
     <string name="description_hint">What are you seeking treatment for?</string>
