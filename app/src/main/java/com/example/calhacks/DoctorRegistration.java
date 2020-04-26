@@ -49,6 +49,7 @@ public class DoctorRegistration extends AppCompatActivity implements OnItemSelec
 
         txtname = findViewById(R.id.EditName);
         docName =  txtname.getText().toString();
+        submit();
     }
 
     @Override
@@ -64,10 +65,10 @@ public class DoctorRegistration extends AppCompatActivity implements OnItemSelec
         Button doctorSubmit = findViewById(R.id.submitDoctor);
         doctorSubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent DocHome = new Intent(getApplicationContext(), DoctorHome.class);
+                Intent SignUp = new Intent(getApplicationContext(), SignupActivity.class);
                 Intent Welcome = new Intent(getApplicationContext(), MainActivity.class);
                 if(checkName(docName)){
-                    startActivity(DocHome);
+                    startActivity(SignUp);
                 }
                 else{
                     System.out.println("Sorry! Your Name is Not Registered in Our Directory. For More Help, Please Contact Us at menah9@gmail.com");

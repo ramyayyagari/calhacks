@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button loginButton = findViewById(R.id.login);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent Login = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(Login);
+            }
+        });
+
         DoctorsDB.readData(this);
     }
 

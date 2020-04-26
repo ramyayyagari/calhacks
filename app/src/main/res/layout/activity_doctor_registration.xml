@@ -122,7 +122,8 @@
             android:paddingTop="15dp"
             android:text="Specialty:"
             android:textColor="#000000"
-            android:textSize="10pt"></TextView>
+            android:textSize="10pt">
+        </TextView>
 
         <Spinner
             android:id="@+id/SpecialtyMenu"
