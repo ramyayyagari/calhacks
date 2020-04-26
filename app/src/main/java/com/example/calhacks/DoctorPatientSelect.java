@@ -22,14 +22,12 @@ public class DoctorPatientSelect extends AppCompatActivity {
                 startActivity(activity2Intent);
             }
         });
+    }
 
-        Button doctorButton = findViewById(R.id.doctorbutton);
-        doctorButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent activity2Intent = new Intent(getApplicationContext(), DoctorRegistration.class);
-                startActivity(activity2Intent);
-            }
-        });
+    public void doctorRegistration(View view){
+        Intent activity2Intent = new Intent(getApplicationContext(), DoctorRegistration.class);
+        startActivity(activity2Intent);
+
     }
 
 }
