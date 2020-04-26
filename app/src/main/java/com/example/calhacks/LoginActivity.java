@@ -97,7 +97,8 @@ public class LoginActivity extends AppCompatActivity {
                 // TODO: Implement successful signup logic here
                 // By default we just finish the Activity and log them in automatically
                 if (validate()) {
-                    if (user.equals("test@test.com") && password.equals("password1234")) {
+                    //this is how we would authenticate the username and password, but idk how to make a signup database of the usernames and passwords
+                    if (user.equals("user1234") && password.equals("password1234")) {
                         //everything checked we open new activity
                         Intent i = new Intent(LoginActivity.this, DoctorHome.class);
                         startActivity(i);
