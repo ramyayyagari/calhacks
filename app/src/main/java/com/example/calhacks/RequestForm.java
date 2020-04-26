@@ -1,12 +1,10 @@
 package com.example.calhacks;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
 
@@ -34,15 +32,5 @@ public class RequestForm extends AppCompatActivity implements OnItemSelectedList
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
-    }
-
-    public void submit(){
-        Button submitRequest = findViewById(R.id.submitRequest);
-        submitRequest.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent PatientConfirm = new Intent(getApplicationContext(), PatientConfirm.class);
-                    startActivity(PatientConfirm);
-                }
-        });
     }
 }
