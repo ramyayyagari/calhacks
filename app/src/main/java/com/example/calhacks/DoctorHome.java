@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static com.example.calhacks.R.id.profile;
+
 public class DoctorHome extends AppCompatActivity {
 
     @Override
@@ -24,6 +26,13 @@ public class DoctorHome extends AppCompatActivity {
         acceptPatientButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent activity2Intent = new Intent(getApplicationContext(), ViewPatientContact.class);
+                startActivity(activity2Intent);
+            }
+        });
+        android.widget.ImageButton profile = findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent activity2Intent = new Intent(getApplicationContext(), ViewProfile.class);
                 startActivity(activity2Intent);
             }
         });
