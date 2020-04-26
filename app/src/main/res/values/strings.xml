@@ -110,6 +110,8 @@
         <item>Sleep Disorders</item>
         <item>Medical Clinics</item>
     </string-array>
+    <string name="title_doctor_list">Doctors</string>
+    <string name="title_doctor_detail">Doctor Detail</string>
 </resources>
 
 

@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoctorRegistration"></activity>
+        <activity
+            android:name=".DoctorListActivity"
+            android:label="@string/title_doctor_list"></activity>
+        <activity
+            android:name=".DoctorDetailActivity"
+            android:label="@string/title_doctor_detail"
+            android:parentActivityName=".DoctorListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.calhacks.DoctorListActivity" />
+        </activity>
+        <activity android:name=".DoctorRegistration" />
         <activity android:name=".DoctorPatientSelect" />
         <activity android:name=".PatientRegistration" />
         <activity android:name=".MainActivity">

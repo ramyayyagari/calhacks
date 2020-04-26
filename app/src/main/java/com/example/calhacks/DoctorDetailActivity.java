@@ -1,22 +1,28 @@
 package com.example.calhacks;
 
-import android.content.Intent;
+
+
 import android.os.Bundle;
-import android.app.Activity;
-import android.app.ActionBar;
-import android.support.v4.app.NavUtils;
-import android.view.MenuItem;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+
+
 
 /**
- * An activity representing a single Doctor detail screen. This
+ * An activity representing a single User detail screen. This
  * activity is only used on narrow width devices. On tablet-size devices,
  * item details are presented side-by-side with a list of items
  * in a {@link DoctorListActivity}.
  */
-public class DoctorDetailActivity extends Activity {
+public class DoctorDetailActivity extends AppCompatActivity {
+    private String TAG = DoctorDetailActivity.class.getName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "ENTERED DOCTORDETAILACTIVITY ONCREATE ");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_detail);
 
@@ -43,26 +49,10 @@ public class DoctorDetailActivity extends Activity {
                     getIntent().getStringExtra(DoctorDetailFragment.ARG_ITEM_ID));
             DoctorDetailFragment fragment = new DoctorDetailFragment();
             fragment.setArguments(arguments);
-            getFragmentManager().beginTransaction()
-                    .add(R.id.doctor_detail_container, fragment)
-                    .commit();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.add(R.id.doctor_detail_container, fragment).commit();
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            // This ID represents the Home or Up button. In the case of this
-            // activity, the Up button is shown. Use NavUtils to allow users
-            // to navigate up one level in the application structure. For
-            // more details, see the Navigation pattern on Android Design:
-            //
-            // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-            //
-            NavUtils.navigateUpTo(this, new Intent(this, DoctorListActivity.class));
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

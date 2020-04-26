@@ -17,16 +17,16 @@ public class DoctorsDB {
 
     }
 
-    static List<Doctor> doctors = new ArrayList<>();
+    public static List<Doctor> DOCTORS = new ArrayList<>();
 
 
     public static List<Doctor> getDoctors() {
-        return doctors;
+        return DOCTORS;
     }
 
     public static void readData(Context context) {
 
-        if (!doctors.isEmpty()) {
+        if (!DOCTORS.isEmpty()) {
             return;
         }
 
@@ -58,7 +58,7 @@ public class DoctorsDB {
 
                 Log.d("MainActivity" ,"Just Created " + doc);
 
-                doctors.add(doc);
+                DOCTORS.add(doc);
 
             }
         } catch (IOException e1) {
