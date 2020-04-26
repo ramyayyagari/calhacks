@@ -117,6 +117,7 @@
     <string name="title_your_requests">Your Requests</string>
     <string name="username">Username</string>
     <string name="profile">Profile</string>
+    <string name="description_instructions">Briefly describe your condition.</string>
 </resources>
 
 
