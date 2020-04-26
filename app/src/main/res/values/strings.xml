@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalHacks App</string>
+    <string name="app_name">Covid Connections</string>
     <string name="doctorbutton">Doctor</string>
     <string name="patientbutton">Patient</string>
     <string name="SelectText">Are you a Doctor or a Patient?</string>
