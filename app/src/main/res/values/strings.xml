@@ -116,6 +116,7 @@
     <string name="acceptPatient">ACCEPT</string>
     <string name="title_your_requests">Your Requests</string>
     <string name="username">Patient123</string>
+    <string name="contact_info">Preferred Method of Contact Info Listed Here</string>
     <string name="request_blurb">I think I may have iridocyclitis!! Help!!</string>
     <string name="profile">Profile</string>
     <string name="description_instructions">Briefly describe your condition.</string>
