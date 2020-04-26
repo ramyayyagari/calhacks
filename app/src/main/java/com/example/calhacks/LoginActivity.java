@@ -89,11 +89,25 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        String user = _userText.getText().toString();
+        String password = _passwordText.getText().toString();
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
 
                 // TODO: Implement successful signup logic here
                 // By default we just finish the Activity and log them in automatically
+                if (validate()) {
+                    if (user.equals("test@test.com") && password.equals("password1234")) {
+                        //everything checked we open new activity
+                        Intent i = new Intent(LoginActivity.this, DoctorHome.class);
+                        startActivity(i);
+                        //we close this activity
+                        this.finish();
+                    } else {
+                        Toast t = Toast.makeText(this, "Wrong email or password!", Toast.LENGTH_SHORT);
+                        t.show();
+                    }
+                }
                 this.finish();
             }
         }
