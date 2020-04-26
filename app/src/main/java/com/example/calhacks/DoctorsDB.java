@@ -9,22 +9,28 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DoctorsDB {
+
+    static List<Doctor> DOCTORS = new ArrayList<>();
+
+
+    static final Map<String, Doctor> DOCTORS_MAP = new HashMap<String, Doctor>();
+
+
+    private static void addDoctor(Doctor item) {
+        DOCTORS_MAP.put(item.getDocName(), item);
+    }
 
     private DoctorsDB() {
 
     }
 
-    public static List<Doctor> DOCTORS = new ArrayList<>();
 
-
-    public static List<Doctor> getDoctors() {
-        return DOCTORS;
-    }
-
-    public static void readData(Context context) {
+    static void readData(Context context) {
 
         if (!DOCTORS.isEmpty()) {
             return;
@@ -59,6 +65,7 @@ public class DoctorsDB {
                 Log.d("MainActivity" ,"Just Created " + doc);
 
                 DOCTORS.add(doc);
+                addDoctor(doc);
 
             }
         } catch (IOException e1) {

@@ -71,7 +71,7 @@ public class DoctorListActivity extends AppCompatActivity {
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mIdView.setText(mValues.get(position).getDocName());
             holder.mContentView.setText(mValues.get(position).getSpecialty());
-            holder.itemView.setTag(mValues.get(position).getDocPhone());//get id
+            holder.itemView.setTag(mValues.get(position).getDocName());//get id
         }
 
         @Override
@@ -92,7 +92,7 @@ public class DoctorListActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String id = (String)view.getTag();
+                String id = (String) view.getTag();
                 Context context = view.getContext();
                 Intent intent = new Intent(context, DoctorDetailActivity.class);
                 intent.putExtra(DoctorDetailFragment.ARG_ITEM_ID, id);
