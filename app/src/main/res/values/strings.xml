@@ -114,6 +114,7 @@
     <string name="title_doctor_detail">Doctor Detail</string>
     <string name="declinePatient">DECLINE</string>
     <string name="acceptPatient">ACCEPT</string>
+    <string name="title_your_requests">Your Requests</string>
 </resources>
 
 

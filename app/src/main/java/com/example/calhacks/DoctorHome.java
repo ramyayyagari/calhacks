@@ -14,12 +14,18 @@ public class DoctorHome extends AppCompatActivity {
         setContentView(R.layout.activity_doctor_home);
 
         Button declinePatientButton = findViewById(R.id.declinePatientButton);
-        //declinePatientButton.setOnClickListener(new View.OnClickListener() {
-            //public void onClick(View v) {
-                //Intent activity2Intent = new Intent(getApplicationContext(), PatientRegistration.class);
-               // startActivity(activity2Intent);
-           // }
-        //});
+        declinePatientButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent activity2Intent = new Intent(getApplicationContext(), DoctorHome.class);
+                startActivity(activity2Intent);
+            }
+        });
         Button acceptPatientButton = findViewById(R.id.acceptPatientButton);
+        acceptPatientButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent activity2Intent = new Intent(getApplicationContext(), ViewPatientContact.class);
+                startActivity(activity2Intent);
+            }
+        });
     }
 }

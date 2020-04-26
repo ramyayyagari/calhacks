@@ -80,11 +80,11 @@ public class DoctorListActivity extends AppCompatActivity {
         }
 
         class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-            final TextView mIdView;
-            final TextView mContentView;
+                    final TextView mIdView;
+                    final TextView mContentView;
 
-            ViewHolder(View view) {
-                super(view);
+                    ViewHolder(View view) {
+                        super(view);
                 mIdView = view.findViewById(R.id.doctorNameId);
                 mContentView = view.findViewById(R.id.doctorSpecialtyId);
                 itemView.setOnClickListener(this);
