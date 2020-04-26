@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ViewProfile"></activity>
         <activity android:name=".ViewPatientContact" />
+        <activity android:name=".RequestForm" />
         <activity
             android:name=".DoctorListActivity"
             android:label="@string/title_doctor_list" />
@@ -25,6 +26,7 @@
         <activity android:name=".DoctorRegistration" />
         <activity android:name=".DoctorPatientSelect" />
         <activity android:name=".PatientRegistration" />
+        <activity android:name=".DoctorHome" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
