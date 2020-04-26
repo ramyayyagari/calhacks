@@ -10,27 +10,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReviewForm"></activity>
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ViewProfile" />
-        <activity android:name=".ViewPatientContact" />
-        <activity android:name=".RequestForm" />
+        <activity android:name=".ReviewForm"
+            android:exported="true"/>
+        <activity android:name=".SignupActivity"
+            android:exported="true"/>
+        <activity android:name=".LoginActivity"
+            android:exported="true"/>
+        <activity android:name=".ViewProfile"
+            android:exported="true"/>
+        <activity android:name=".ViewPatientContact"
+            android:exported="true"/>
+        <activity android:name=".RequestForm"
+            android:exported="true"/>
         <activity
             android:name=".DoctorListActivity"
-            android:label="@string/title_doctor_list" />
+            android:label="@string/title_doctor_list"
+            android:exported="true"/>
         <activity
             android:name=".DoctorDetailActivity"
             android:label="@string/title_doctor_detail"
-            android:parentActivityName=".DoctorListActivity">
+            android:parentActivityName=".DoctorListActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.calhacks.DoctorListActivity" />
         </activity>
-        <activity android:name=".DoctorRegistration" />
-        <activity android:name=".DoctorPatientSelect" />
-        <activity android:name=".PatientRegistration" />
-        <activity android:name=".DoctorHome" />
+        <activity android:name=".DoctorRegistration"
+            android:exported="true"/>
+        <activity android:name=".DoctorPatientSelect"
+            android:exported="true"/>
+        <activity android:name=".PatientRegistration"
+            android:exported="true"/>
+        <activity android:name=".DoctorHome"
+            android:exported="true"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
