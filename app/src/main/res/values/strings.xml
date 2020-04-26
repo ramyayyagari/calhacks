@@ -118,6 +118,12 @@
     <string name="username">Username</string>
     <string name="profile">Profile</string>
     <string name="description_instructions">Briefly describe your condition.</string>
+    <string name="description_hint">What are you seeking treatment for?</string>
+    <string name="specialty_type">Preferred Specialty of Physician</string>
+    <string name="title_request">Make a Request</string>
+    <string name="specific_doctor">Is there a specific doctor you would like to see?</string>
+    <string name="specific_doctorName">If so, enter their full name here</string>
+    <string name="submit">Submit</string>
 </resources>
 
 
